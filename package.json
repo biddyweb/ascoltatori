@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive --bail --reporter spec test",
+    "test-redis": "mocha --recursive --bail --reporter spec test -g redis",
     "ci": "mocha --recursive --bail --watch test",
     "coverage": "rm -rf coverage; istanbul cover _mocha -- --reporter spec --bail",
     "publish-coverage": "(cat coverage/lcov.info | coveralls)",
@@ -14,7 +15,7 @@
   "pre-commit": [
     "jshint-lib",
     "jshint-test",
-    "test"
+    "test-redis"
   ],
   "repository": {
     "type": "git",
@@ -66,6 +67,7 @@
   },
   "optionalDependencies": {
     "redis": "~0.10.1",
+    "redis-node-cluster":"git://github.com/darkua/redis-node-cluster.git",
     "zmq": "~2.6.0",
     "amqp": "~0.2.0",
     "mqtt": "~0.3.8",
