@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive --bail --reporter spec test",
-    "test-redis": "mocha --recursive --bail --reporter spec test -g redis",
+    "test-redis": "mocha --recursive --bail --reporter spec test -g redis-cluster",
     "ci": "mocha --recursive --bail --watch test",
     "coverage": "rm -rf coverage; istanbul cover _mocha -- --reporter spec --bail",
     "publish-coverage": "(cat coverage/lcov.info | coveralls)",

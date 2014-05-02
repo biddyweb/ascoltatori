@@ -12,6 +12,29 @@ global.redisSettings = function() {
   };
 };
 
+global.redisClusterSettings = function() {
+
+  var nodes = [
+    {host:'localhost',port:7000},
+    {host:'localhost',port:7001},
+    {host:'localhost',port:7002},
+    {host:'localhost',port:7003},
+    {host:'localhost',port:7004},
+    {host:'localhost',port:7005}
+  ];
+  
+  return {
+    json:false,
+    redisCluster:require('redis-node-cluster').Cluster, 
+    nodes:nodes,
+    settings:{
+      redis:{
+        retry_backoff:5
+      }  
+    }
+  };
+};
+
 var portCounter = 9042;
 global.nextPort = function() {
   return ++portCounter;
