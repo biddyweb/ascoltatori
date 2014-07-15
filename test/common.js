@@ -29,7 +29,8 @@ global.redisClusterSettings = function() {
     nodes:nodes,
     settings:{
       redis:{
-        retry_backoff:5
+        retry_backoff:5,
+        detect_buffers:true
       }  
     }
   };
