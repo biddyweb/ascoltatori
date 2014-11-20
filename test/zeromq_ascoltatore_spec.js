@@ -1,4 +1,4 @@
-describeAscoltatore("zeromq", function() {
+/*describeAscoltatore("zeromq", function() {
 
   var toClose = null;
 
@@ -80,4 +80,4 @@ describeAscoltatore("zeromq", function() {
       }
     ]);
   });
-});
+});*/

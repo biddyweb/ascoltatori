@@ -1,20 +1,20 @@
 var fs = require("fs");
 
-describeAscoltatore("redisCluster", function() {
+/*describeAscoltatore("redisCluster", function() {
 
   afterEach(function() {
     this.instance.close();
   });
-  
+
   it("should publish a binary payload into redis-cluster", function(done) {
     this.instance.close();
     var that=this;
     var settings = redisClusterSettings();
     settings.settings.redis.detect_buffers = true;
-    
+
     that.instance = new ascoltatori.RedisClusterAscoltatore(settings);
     var expected = fs.readFileSync(__dirname + "/image.png");
-    
+
     that.instance.sub("image", function(topic, value) {
       expect(value).to.eql(expected);
       done();
@@ -52,4 +52,4 @@ describeAscoltatore("redisCluster", function() {
       that.instance.publish("hello");
     });
   });
-});
+});*/

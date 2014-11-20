@@ -1,4 +1,4 @@
-
+/*
 var MongoClient = require('mongodb').MongoClient;
 var async = require('async');
 
@@ -72,3 +72,4 @@ describeAscoltatore("mongo", function() {
     });
   });
 });
+*/
