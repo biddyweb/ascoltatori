@@ -70,7 +70,7 @@
     "redis": "~0.10.1",
     "redis-node-cluster":"git://github.com/darkua/redis-node-cluster.git",
     "zmq": "~2.6.0",
-    "amqp": "~0.2.6",
+    "amqp": "~0.2.3",
     "mqtt": "~0.3.8",
     "mongodb": "~1.3.23",
     "qlobber-fsq": "~0.0.3"
